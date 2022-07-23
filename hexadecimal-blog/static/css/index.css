@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #282a36;
+}
+
+p {
+    color: #f8f8f2;
+}
+
+/* Hide scrollbar, but keep scrolling available */
+html, body {
+    overflow-y: scroll;
+}
+
+/* For WebKit browsers */
+html::-webkit-scrollbar {
+    display: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body, html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+.container {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    /* TODO: make the container width reactive to fit screensize*/
+    width: 85%;
+    background-color: #44475a;
+    border: 1px solid rgba(0,0,0,.3);
+    border-bottom: 0px;
+    border-top: 0px;
+    margin: 0 auto;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+/* BEGIN Flexbox Alignment */
+
+.container .header {
+    flex: 0 1 auto;
+    border: 2px solid rgba(0,0,0,.3);
+    border-radius: 10px;
+    box-shadow: 5px 10px #282a36;
+    padding: 10px;
+}
+
+.container .posts {
+    flex: 1 1 auto;
+}
+
+.container .footer {
+    flex: 0 1 16px;
+}
+
+/* BEGIN Header CSS */
+
+/* TODO: Make the h1 and h3 font size fit screensize */
+
+.container .header h1 {
+    margin: 10px;
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 1.75rem;
+    color: #bd93f9;
+}
+
+.container .header h3 {
+    margin: 10px;
+    margin-top: 2.5px;
+    font-size: 1.15rem;
+    color: #a17be6;
+}
+
+.container .social-icons {
+    margin: 10px;
+    border-top: 1px solid rgba(0,0,0,.3);
+    padding-top: 15px;
+    font-size: 1.65rem;
+    color: #ad93f9;
+    cursor: auto;
+}
+
+.social-icons a {
+    color: #ad93f9;
+}
+
+.social-icons i {
+    padding-right: 10px;
+}
+
+.social-icons i:hover {
+    color: #d2c3ff;
+}
+
+/* BEGIN Posts CSS */
+
+.posts {
+    margin-top: 35px;
+}
+
+.posts h2 {
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+    color: #bd93f9;
+    border-bottom: 1px solid rgba(0,0,0,.3);
+    padding-bottom: 3px;
+}
+
+.posts #post-1 {
+    margin-top: 15px;
+}
+
+.posts .post {
+    margin-top: 20px;
+    border: 2px solid rgba(0,0,0,.3);
+    border-radius: 10px;
+    box-shadow: 5px 8px #282a36;
+    padding: 10px;
+}
+
+.posts .post h2 {
+    font-size: 1.30rem;
+    border-bottom: 1px solid rgba(0,0,0,.3);
+}
+
+.posts .post h3 {
+    margin-bottom: 12px;
+    color: #bd93f9;
+}
+
+.posts .post a {
+    margin-top: 10px;
+    color: #bd93f9;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.posts .post a:hover {
+    color: #d2c3ff;
+}
+
+/* BEGIN Footer CSS */
+
+.footer {
+    border-top: 1px solid rgba(0,0,0,.3);
+    padding: 15px;
+    text-align: center;
+}
+
+.footer a {
+    color: #bd93f9;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #d2c3ff;
+}
